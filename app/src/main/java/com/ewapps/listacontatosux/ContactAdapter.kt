@@ -23,6 +23,12 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHol
         }
     }
 
+    fun updateList(list: List<Contact>) {
+        this.list.clear()
+        this.list.addAll(list)
+        notifyDataSetChanged()
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactAdapterViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.contact_item, parent, false)
         return ContactAdapterViewHolder(view)
