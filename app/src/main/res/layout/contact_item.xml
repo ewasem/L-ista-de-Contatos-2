@@ -38,9 +38,9 @@
         <TextView
             android:id="@+id/tv_phone"
             android:layout_width="0dp"
+            style="@style/TextViewDefault"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textColor="#555555"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@id/iv_photo"
             app:layout_constraintStart_toEndOf="@id/iv_photo"
